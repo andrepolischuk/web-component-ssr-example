@@ -7,7 +7,7 @@ class Link extends LitElement {
 
   onClick = (event) => {
     event.preventDefault()
-    history.pushState(null, '', this.getAttribute("href"))
+    history.pushState(null, '', this.href)
     window.dispatchEvent(new CustomEvent("navigate"))
   }
 
